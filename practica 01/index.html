@@ -1,0 +1,907 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A Material Design theme for MkDocs">
+      
+      
+      
+        <meta name="author" content="Martin Donath">
+      
+      
+        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/practica%2001/">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.0b2">
+    
+    
+      
+        <title>practica 1 - Material for MkDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.45122f27.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e03a20ad.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffc105">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto",;--md-code-font-family:"Roboto Mono",}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="amber" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#instalacion-de-la-pila-lamp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs" class="md-header-nav__button md-logo" aria-label="Material for MkDocs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Material for MkDocs
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              practica 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/squidfunk/mkdocs-material/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs" class="md-nav__button md-logo" aria-label="Material for MkDocs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Material for MkDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/squidfunk/mkdocs-material/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          practica 1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        practica 1
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lamp" class="md-nav__link">
+    LAMP
+  </a>
+  
+    <nav class="md-nav" aria-label="LAMP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apache-server" class="md-nav__link">
+    APACHE SERVER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mysql-server" class="md-nav__link">
+    MySQL SERVER
+  </a>
+  
+    <nav class="md-nav" aria-label="MySQL SERVER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-metodo-1" class="md-nav__link">
+    - Metodo 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-metodo-2" class="md-nav__link">
+    - Metodo 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#php" class="md-nav__link">
+    PHP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lamp-" class="md-nav__link">
+    ------------------------LAMP----------------------------
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herramientas-para-la-lamp" class="md-nav__link">
+    HERRAMIENTAS PARA LA LAMP
+  </a>
+  
+    <nav class="md-nav" aria-label="HERRAMIENTAS PARA LA LAMP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phpmyadmin" class="md-nav__link">
+    PhpMyAdmin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goaccess" class="md-nav__link">
+    GoAccess
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awstats" class="md-nav__link">
+    AWStats
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practica%2017/" class="md-nav__link">
+        practica 17
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        Acerca de
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lamp" class="md-nav__link">
+    LAMP
+  </a>
+  
+    <nav class="md-nav" aria-label="LAMP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apache-server" class="md-nav__link">
+    APACHE SERVER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mysql-server" class="md-nav__link">
+    MySQL SERVER
+  </a>
+  
+    <nav class="md-nav" aria-label="MySQL SERVER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-metodo-1" class="md-nav__link">
+    - Metodo 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-metodo-2" class="md-nav__link">
+    - Metodo 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#php" class="md-nav__link">
+    PHP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lamp-" class="md-nav__link">
+    ------------------------LAMP----------------------------
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herramientas-para-la-lamp" class="md-nav__link">
+    HERRAMIENTAS PARA LA LAMP
+  </a>
+  
+    <nav class="md-nav" aria-label="HERRAMIENTAS PARA LA LAMP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phpmyadmin" class="md-nav__link">
+    PhpMyAdmin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goaccess" class="md-nav__link">
+    GoAccess
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awstats" class="md-nav__link">
+    AWStats
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/squidfunk/mkdocs-material/edit/master/docs/practica 01.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="instalacion-de-la-pila-lamp">INSTALACIÓN DE LA PILA LAMP</h1>
+<h2 id="lamp"><strong>LAMP</strong></h2>
+<p>Lo primero que harémos será actualizar la lista de paquetes con : <strong>apt update</strong>        <br />
+y después actualizamos los páquetes instalados: <strong>apt upgrade</strong>                                                   </p>
+<h3 id="apache-server"><strong>APACHE SERVER</strong></h3>
+<p><img alt="" src="../images/apache.png" /> </p>
+<p>Ya actualizado todo procedemos a instalar <strong>Apache Server</strong> con el comando: <strong>apt install apache2</strong>                    </p>
+<p>Con Apache ya instalado podemos entrar en sus archivos de configuación: </p>
+<ul>
+<li>mods-available</li>
+<li>mods-enable</li>
+<li>conf-available</li>
+<li>conf-enable</li>
+<li>sites-available </li>
+<li>sites-enable</li>
+</ul>
+<p>Y estas se almacenan en el directorio <strong>/etc/apache2</strong>      </p>
+<p>Ademas de poder entrar también en los archivos .log: </p>
+<ul>
+<li>/var/log/apache2/access.log : El servidor almacena en el registro de acceso información sobre todas las peticiones que procesa.</li>
+<li>/var/log/apache2/error.log : El registro de errores del servidor.</li>
+</ul>
+<h3 id="mysql-server"><strong>MySQL SERVER</strong></h3>
+<p><img alt="" src="../images/MySQL.png" /> </p>
+<p>Instalamos con el comando: <strong>apt install mysql-server</strong> <br />
+Ya instalado podemos acceder a los archivos de configuración y de .log: </p>
+<ul>
+<li>/etc/mysql/mysql.cnf</li>
+<li>/etc/mysql/conf.d/</li>
+<li>/etc/mysql/mysql.conf.d/</li>
+<li>/var/log/mysql/error.log</li>
+</ul>
+<p>Para entrar en modo consola con el usuario root pondremos <strong>sudo su</strong> podremos entrar sin necesidad de poner contraseña, para que root tenga contraseña tenemos dos maneras diferentes de hacerlo: </p>
+<h4 id="-metodo-1"><strong>- Metodo 1</strong></h4>
+<p>Seleccionamos la base de datos mysql (<strong>USE</strong> mysql;) en la cual podremos ver todos los usuarios que existen y qué método tienen establecido para autenticar.   <br />
+(<strong>SELECT</strong> User, Host, plugin <strong>FROM</strong> user;)</p>
+<p>Para cambiarlo solo necesitariamos hacer uso de:</p>
+<blockquote>
+<ul>
+<li><strong>ALTER USER</strong> 'root'@'localhost' <strong>IDENTIFIED WITH</strong> caching_sha2_password <strong>BY</strong> 'nueva_contraseña';</li>
+</ul>
+</blockquote>
+<p>Y para que se apliquen los cambios usamos: </p>
+<blockquote>
+<ul>
+<li><strong>FLUSH PRIVILEGES</strong>;</li>
+</ul>
+</blockquote>
+<h4 id="-metodo-2"><strong>- Metodo 2</strong></h4>
+<p>Otra opción para modificar la contraseña del usuario root en MySQL es iniciar el servicio con la opción --skip-grant-tables, que permite que cualquier usuario se pueda conectar sin necesidad de realizar el proceso de autenticación.</p>
+<p>El primer paso será detener MySQL y vamos a iniciar el proceso de MySQL de forma manual. Creamos el directorio     /var/run/mysqld y le asignamos que el propietario de este directorio es mysql del grupo mysql.</p>
+<blockquote>
+<ul>
+<li>mkdir -p /var/run/mysqld</li>
+<li>chown mysql:mysql /var/run/mysqld</li>
+</ul>
+</blockquote>
+<p>Volvemos a iniciar el proceso, pasándole como parámetro la opción --skip-grant-tables que permite conectarnos sin contraseña y con todos los privilegios.</p>
+<blockquote>
+<ul>
+<li>/usr/sbin/mysqld --skip-grant-tables &amp;</li>
+</ul>
+</blockquote>
+<p>(Los <strong>&amp;</strong> se usan para que el proceso se) ejecute en segundo plano)</p>
+<p>Para comprobar que este se está ejecutando hacemos uso del comando: </p>
+<blockquote>
+<ul>
+<li>ps aux | grep mysqld</li>
+</ul>
+</blockquote>
+<p>Nos conectamos a MySQL como root con todo los privilegios (entramos sin contraseña y usuario)</p>
+<blockquote>
+<ul>
+<li>mysql</li>
+</ul>
+</blockquote>
+<p>Ahora tendremos que indicarle al servidor que tiene que recargar las tablas encargadas de la autenticación de los usuarios para poder activar la gestión de usuarios. Recuerda que la opción --skip-grant-tables deshabilita esta funcionalidad.</p>
+<blockquote>
+<ul>
+<li><strong>FLUSH PRIVILEGES</strong>;</li>
+</ul>
+</blockquote>
+<p>Cambiamos contraseña: </p>
+<blockquote>
+<ul>
+<li><strong>ALTER USER</strong> 'root'@'localhost' <strong>IDENTIFIED BY</strong> 'nueva_contraseña';</li>
+</ul>
+</blockquote>
+<p>Y para finalizar salimos del cliente MySQL, detenemos el proceso y reiniciamos </p>
+<blockquote>
+<ul>
+<li>exit; (Salimos)</li>
+<li>pkill mysqld (Detenemos proceso)</li>
+<li>systemctl restart mysql (Reiniciamos)</li>
+</ul>
+</blockquote>
+<h3 id="php"><strong>PHP</strong></h3>
+<p><img alt="" src="../images/php.png" /> </p>
+<p>Instalamos los módulos</p>
+<blockquote>
+<ul>
+<li>apt install php libapache2-mod-php php-mysql</li>
+</ul>
+</blockquote>
+<p>· libapache2-mod-php: Permite servir páginas PHP desde el servidor web apache.</p>
+<p>· php-mysql: Permite conectar a una base de datos MySQL desde código PHP.</p>
+<p>Creamos un archivo para comprobar si la instalación se ha realizado correctamente. </p>
+<blockquote>
+<ul>
+<li>nano /var/www/html/info.php</li>
+</ul>
+</blockquote>
+<p>Y añadimos dentro: </p>
+<p><img alt="" src="../images/php1.png" /></p>
+<h3 id="-lamp-">------------------------LAMP----------------------------</h3>
+<h2 id="herramientas-para-la-lamp">HERRAMIENTAS PARA LA LAMP</h2>
+<h3 id="phpmyadmin"><strong>PhpMyAdmin</strong></h3>
+<p><img alt="" src="../images/phpmyadmin.png" /></p>
+<p>Lo primero que debemos hacer será instalar los paquetes: </p>
+<blockquote>
+<ul>
+<li>apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl</li>
+</ul>
+</blockquote>
+<p>Contenido de los paquetes: </p>
+<blockquote>
+<ul>
+<li><strong>php-mbstring</strong>: Incluye el módulo mbstring (multi-byte string) que permite administrar cadenas no-ASCII y convertir cadenas a diferentes codificaciones.</li>
+<li><strong>php-zip</strong>: Permite la carga de archivos .zip a phpMyAdmin.</li>
+<li><strong>php-gd</strong>: Incluye la librería GD Graphics que permite crear y modificar imágenes.</li>
+<li><strong>php-json</strong>: Añade soporte para trabajar con el formato JSON desde PHP.</li>
+<li><strong>php-curl</strong>: Permite interactuar con servidores haciendo uso de diferentes protocolos desde PHP.</li>
+</ul>
+</blockquote>
+<p>Durante el proceso de instalación aparecerá una ventana la cual nos preguntará que tipo de servidor web vamos a usar para ejecutar phpmyadmin</p>
+<blockquote>
+<ul>
+<li>apache2</li>
+</ul>
+</blockquote>
+<p>Confirmamos que vamos a utilizar el <strong>dbconfig-common</strong> para configurar la base de datos y finalmente nos solicitará una contraseña para phpmyadmin.</p>
+<h3 id="goaccess"><strong>GoAccess</strong></h3>
+<p><img alt="" src="../images/goaccess.png" /></p>
+<p>Para instalar GoAccess tendremos que añadir los repositorios oficiales:</p>
+<blockquote>
+<ul>
+<li>echo "deb http://deb.goaccess.io/ $(lsb_release -cs) main" | sudo tee -a /etc/apt/sources.list.d/goaccess.list</li>
+</ul>
+</blockquote>
+<p>Descargamos los archivos</p>
+<blockquote>
+<ul>
+<li>wget -O - https://deb.goaccess.io/gnugpg.key | sudo apt-key add -</li>
+</ul>
+</blockquote>
+<p>Y finalmente actualizamos e instalamos </p>
+<blockquote>
+<ul>
+<li>apt-get update</li>
+<li>apt-get install goaccess</li>
+</ul>
+</blockquote>
+<p>Una vez instalado podremos hacer: </p>
+<p>· Parchear el archivo log <strong>access.log</strong> que nos miestra la información del log a tiempo real</p>
+<blockquote>
+<ul>
+<li>goaccess /var/log/apache2/access.log -c</li>
+</ul>
+</blockquote>
+<p>Parchear un archivo log que genera un archivo HTML estático</p>
+<blockquote>
+<ul>
+<li>goaccess /var/log/apache2/access.log -o /var/www/html/report.html --log-format=COMBINED</li>
+</ul>
+</blockquote>
+<p>O parchear un archivo log que genere un archivo HTML en tiempo real</p>
+<blockquote>
+<ul>
+<li>goaccess /var/log/apache2/access.log -o /var/www/html/report.html --log-format=COMBINED --real-time-html</li>
+</ul>
+</blockquote>
+<p>Y para finalizar con la configuración de GoAccess crearemos un directorio llamado <strong>stats</strong> en la cual podremos consultar los informes generados. (Este debe estar controlado por lo que solo podremos accedes con usuario y contraseña)</p>
+<blockquote>
+<ul>
+<li>mkdir /var/www/html/stats</li>
+</ul>
+</blockquote>
+<p>Lanzamos este proceso en segundo plano </p>
+<blockquote>
+<ul>
+<li>goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --real-time-html &amp;</li>
+</ul>
+</blockquote>
+<p>Pero este <strong>&amp;</strong> cerraría la sesión SSH en caso de que estuvieramos conectados y ppara evitar esto tenemos estas siguientes utilidades:</p>
+<ul>
+<li>
+<p>nohup : Ejecuta el comando que recibe como parámetro y hace que ignore las señales SIGHUP, que son las señales que se envían a un proceso cuando el terminal que los controla se cierra.</p>
+<blockquote>
+<ul>
+<li>nohup goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --real-time-html &amp;</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>screen : Permite iniciar una sesión y tener varios terminales virtuales en ella. Los procesos que se ejecutan en estos terminales virtuales no finalizarán al cerrar el terminal virtual.</p>
+<blockquote>
+<ul>
+<li>screen -dmL goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --real-time-html</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>tmux : Es una alternativa más reciente que screen. </p>
+</li>
+</ul>
+<p>Creamos el archivo de contraseñas para el usuario que accederá al directorio stats. El archivo de contraseñas lo guardamos en un directorio seguro que no sea accesible desde el exterior. En nuestro caso el archivo se llamará .htpasswd</p>
+<blockquote>
+<ul>
+<li>htpasswd -c /home/<strong>usuario</strong>/.htpasswd usuario</li>
+</ul>
+</blockquote>
+<p>Editamos el archivo de configuración de Apache</p>
+<blockquote>
+<ul>
+<li>nano /etc/apache2/sites-enabled/000-default.conf</li>
+</ul>
+</blockquote>
+<p>Y en ella añadiremos lo siguiente: </p>
+<p><img alt="" src="../images/VH.png" /></p>
+<p>Por último en el directorio stats lanzamos el proceso en segundo plano de gooaccess para restringir el acceso por usuario y contraseña al directorio .htpasswd</p>
+<blockquote>
+<ul>
+<li>htpasswd -c /home/<strong>usuario</strong>/.htpasswd usuario</li>
+</ul>
+</blockquote>
+<p>Creamos el archivo .htpasswd </p>
+<blockquote>
+<ul>
+<li>nano /var/www/html/stats/.htaccess</li>
+</ul>
+</blockquote>
+<p>Y dentro de el añadiremos: </p>
+<blockquote>
+<ul>
+<li>AuthType Basic
+AuthName "Acceso restringido"
+AuthBasicProvider file
+AuthUserFile "/home/usuario/.htpasswd"
+Require valid-user</li>
+</ul>
+</blockquote>
+<p>Editamos el archivo de configuración de apache: </p>
+<blockquote>
+<ul>
+<li>nano /etc/apache2/sites-enabled/000-default.conf</li>
+</ul>
+</blockquote>
+<p>Y añadiremos: </p>
+<p><img alt="" src="../images/htpasswd.png" /></p>
+<h3 id="awstats"><strong>AWStats</strong></h3>
+<p><img alt="" src="../images/aws.png" /> </p>
+<p>Es una herramienta open source de informes de análisis web, apta para analizar datos de servicios de Internet como un servidor web, streaming, mail y FTP. AWstats analiza los archivos de log del servidor, y basándose en ellos produce informes HTML.</p>
+<p>Para ello actualizamos e instalamos lo paquetes</p>
+<blockquote>
+<ul>
+<li>apt-get update</li>
+<li>apt-get install awstats libgeo-ipfree-perl libnet-ip-perl </li>
+</ul>
+</blockquote>
+<p>Y ya instalado ahora podremos configurar </p>
+<blockquote>
+<ul>
+<li>cp /etc/awstats/awstats.conf /etc/awstats/awstats.example.com.conf</li>
+</ul>
+</blockquote>
+<p>Dentro de este haríamos nuestros cambios: </p>
+<pre><code>LogFormat=1
+SiteDomain=&quot;ejemplo.com&quot;
+HostAliases=&quot;localhost 127.0.0.1 example.com&quot;
+AllowFullYearView=3
+AllowAccessFromWebToFollowingIPAddresses=&quot;127.0.0.1 192.168.1.0-192.168.1.255&quot;
+LoadPlugin=&quot;información sobre herramientas&quot;
+LoadPlugin=&quot;graphgooglechartapi&quot;
+LoadPlugin=&quot;geoipfree&quot;
+</code></pre>
+<p>Eliminamos datos existentes para que no de error</p>
+<blockquote>
+<ul>
+<li>sudo mv /etc/cron.d/awstats/root</li>
+<li>sudo rm /var/lib/awstats/*</li>
+</ul>
+</blockquote>
+<p>Y a continuación cambiamos los permisos: </p>
+<blockquote>
+<ul>
+<li>chgrp www-data /var/log/apache2/var/log/apache2/* log /var/log/apache2/access.log</li>
+<li>chmod 755 /var/log/apache2</li>
+<li>sudo chmod 644 /var/log/apache2/*</li>
+</ul>
+</blockquote>
+<p>Modificamos archivo: </p>
+<blockquote>
+<ul>
+<li>nano /etc/logrotate.d/apache2</li>
+</ul>
+</blockquote>
+<p>Y cambiamos el <strong>crear 640</strong> por <strong>crear 640 root www-data</strong></p>
+<p>Configuramos los archivos de apache: </p>
+<blockquote>
+<ul>
+<li>nano /etc/apache2/sites-available/example.com.conf</li>
+</ul>
+</blockquote>
+<p>Y lo arreglaremos así:</p>
+<pre><code>Alias ​​/awstatsclasses&quot;/usr/share/awstats/lib/&quot;
+Alias ​​/awstats-icon/&quot;/usr/share/awstats/icon/&quot;
+Alias ​​/ awstatscss&quot;/usr/share/doc/awstats/examples/css&quot;
+ScriptAlias ​​/cgi-bin/ /usr/lib/cgi-bin/
+ScriptAlias ​​/awstats/ /usr/lib/cgi-bin/
+Opciones + ExecCGI -MultiViews + SymLinksIfOwnerMatch
+</code></pre>
+<p>Cerramos el archivo y activamos el modulo CGI:</p>
+<blockquote>
+<ul>
+<li>a2enmod cgi</li>
+</ul>
+</blockquote>
+<p>Y finalmente reiniciamos apache </p>
+<blockquote>
+<ul>
+<li>systemctl reiniciar apache2</li>
+</ul>
+</blockquote>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="../practica%2017/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                practica 17
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/worker/search.3f4c5856.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/vendor.00ecb175.min.js"></script>
+      <script src="../assets/javascripts/bundle.fbcb1fc3.min.js"></script>
+      
+    
+  </body>
+</html>
