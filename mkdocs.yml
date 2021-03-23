@@ -1,0 +1,9 @@
+site_name: IAW
+
+nav:
+    - Principal: index.md
+    - Practica 1: practica01.md
+    - Practica 17: practica17.md
+    - Acerca de: about.md
+
+theme: material
