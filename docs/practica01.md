@@ -6,7 +6,7 @@ y después actualizamos los páquetes instalados: **apt upgrade**
 
 ### **APACHE SERVER**
 
-![](Imágenes/apache.png) 
+![](https://github.com/knyu07/iaw-knyu07.github.io/blob/gh-pages/images/apache.png) 
 
 Ya actualizado todo procedemos a instalar **Apache Server** con el comando: **apt install apache2**                    
 
@@ -28,7 +28,7 @@ Ademas de poder entrar también en los archivos .log:
 
 ### **MySQL SERVER**
 
-![](Imágenes/MySQL.png) 
+![](https://github.com/knyu07/iaw-knyu07.github.io/blob/gh-pages/images/MySQL.png) 
 
 Instalamos con el comando: **apt install mysql-server**   
 Ya instalado podemos acceder a los archivos de configuración y de .log: 
@@ -90,7 +90,7 @@ Y para finalizar salimos del cliente MySQL, detenemos el proceso y reiniciamos
 
 ### **PHP**
 
-![](Imágenes/php.png) 
+![](https://github.com/knyu07/iaw-knyu07.github.io/blob/gh-pages/images/php.png) 
 
 Instalamos los módulos
 
@@ -107,7 +107,7 @@ Creamos un archivo para comprobar si la instalación se ha realizado correctamen
 
 Y añadimos dentro: 
 
-![](Imágenes/php1.png)
+![](https://github.com/knyu07/iaw-knyu07.github.io/blob/gh-pages/images/php1.png)
 
 ### ------------------------LAMP----------------------------
 
@@ -115,7 +115,7 @@ Y añadimos dentro:
 
 ### **PhpMyAdmin**
 
-![](Imágenes/phpmyadmin.png)
+![](https://github.com/knyu07/iaw-knyu07.github.io/blob/gh-pages/images/phpmyadmin.png)
 
 Lo primero que debemos hacer será instalar los paquetes: 
 
@@ -137,7 +137,7 @@ Confirmamos que vamos a utilizar el **dbconfig-common** para configurar la base 
 
 ### **GoAccess**
 
-![](Imágenes/goaccess.png)
+![](https://github.com/knyu07/iaw-knyu07.github.io/blob/gh-pages/images/goaccess.png)
 
 Para instalar GoAccess tendremos que añadir los repositorios oficiales:
 
@@ -195,7 +195,7 @@ Pero este **&** cerraría la sesión SSH en caso de que estuvieramos conectados 
 
  Y en ella añadiremos lo siguiente: 
 
-![](Imágenes/VH.png)
+![](https://github.com/knyu07/iaw-knyu07.github.io/blob/gh-pages/images/VH.png)
 
 Por último en el directorio stats lanzamos el proceso en segundo plano de gooaccess para restringir el acceso por usuario y contraseña al directorio .htpasswd
 
@@ -224,7 +224,7 @@ Y añadiremos:
 
 ### **AWStats**
 
-![](Imágenes/aws.png) 
+![](https://github.com/knyu07/iaw-knyu07.github.io/blob/gh-pages/images/aws.png) 
 
 Es una herramienta open source de informes de análisis web, apta para analizar datos de servicios de Internet como un servidor web, streaming, mail y FTP. AWstats analiza los archivos de log del servidor, y basándose en ellos produce informes HTML.
 
